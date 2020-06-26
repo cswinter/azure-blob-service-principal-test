@@ -1,0 +1,18 @@
+[package]
+name = "azure"
+version = "0.1.0"
+authors = ["clemens"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+azure_sdk_storage_blob = "0.44.1"
+azure_sdk_core = "0.43.4"
+azure_sdk_storage_core = "0.44.1"
+azure_sdk_auth_aad = "0.46.0"
+color-eyre = "0.4"
+tokio = { version = "0.2", features = ["full"] }
+oauth2               = { version = "3.0.0-alpha.9", features = ["reqwest-010", "futures-03"], default-features = false}
+reqwest              = { version = "0.10", features = ["json"] }
+md5 = "0.7"
